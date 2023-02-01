@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente (primeira opção)</h1>
+    <p>Este vídeo esá hospedado no meu próprio servidor.</p>
+        <video src="midia/meu-video.mp4" width="500" poster="imagens/montanha-de-gelo-png-Imagem-png-gratis.png"  controls></video>
+        <video src="midia/meu-video.webm" width="500" controls></video>
+        <video src="midia/meu-video.mkv" width="500" controls></video>
+    <h1>Inserindo vídeos hospedados localmente (segunda opção)</h1>
+    <p>Este vídeo esá hospedado no meu próprio servidor.</p>
+        <video width="500" poster="imagens/montanha-de-gelo-png-Imagem-png-gratis.png" controls autoplay loop>
+            <source src="midia/meu-video.mp4" type="video/mp4">
+            <source src="midia/meu-video.mkv" type="video/mp4">
+            <source src="midia/meu-video.webm" type="video/webm">
+            <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+        </video>
+    <h1>Inserndo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fuqjTEd_r6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> <!--esse código foi copiado do Youtube ao clicar em compartilhar e depois em incorporar-->
+</body>
+</html>

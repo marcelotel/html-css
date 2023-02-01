@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Responsividade</title>
+    <style>
+        body {
+            background-color: gray;
+        }
+
+        main {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+
+            /* width: 800px; 
+            
+            para sites não responsivos, basta usar o "width" com uma largura padrão. Mas se for responsivo, é necessário informar largura mínima e máxima. Neste caso, não usar somente "width", mas sim "min-width: 280px" e "max-width: 800px" */
+
+            min-width: 280px;
+            /* esta é a largura de um celular antigo */
+            max-width: 800px;
+            /* esta é a largura máxima padrão */
+            margin: auto;
+            /* mantém conteúdo da página alinhado ao centro */
+        }
+
+        img {
+            width: 100%;
+            /* faz com que a imagem fique sempre em 100% independentemente da largura da página */
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <h1>Testando Responsividade</h1>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum veritatis repellendus fuga beatae harum
+            molestias ipsam, excepturi quibusdam officiis necessitatibus explicabo accusamus libero cum. Rerum quidem
+            officiis nulla placeat recusandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptates
+            alias reiciendis nostrum adipisci praesentium inventore deleniti totam nulla consequuntur! Fugiat est
+            possimus, porro unde cupiditate minima adipisci vel beatae? Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Ut ipsum illum dicta voluptatibus error esse quidem ratione dolorum! Voluptates minima
+            eligendi odit voluptas fugit. Quibusdam perferendis numquam quae cupiditate voluptates?</p>
+        <picture>
+            <source media="(max-width: 600px)" srcset="imagens/irina-blok-pq.jpg">
+            <!-- este comando faz com que a imagem mude quando o tamanho da tela for menor que 600px -->
+            <img src="imagens/irina-blok.jpg" alt="Irina Blok">
+        </picture>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatum veritatis repellendus fuga beatae harum
+            molestias ipsam, excepturi quibusdam officiis necessitatibus explicabo accusamus libero cum. Rerum quidem
+            officiis nulla placeat recusandae. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Non voluptates
+            alias reiciendis nostrum adipisci praesentium inventore deleniti totam nulla consequuntur! Fugiat est
+            possimus, porro unde cupiditate minima adipisci vel beatae? Lorem, ipsum dolor sit amet consectetur
+            adipisicing elit. Ut ipsum illum dicta voluptatibus error esse quidem ratione dolorum! Voluptates minima
+            eligendi odit voluptas fugit. Quibusdam perferendis numquam quae cupiditate voluptates?</p>
+    </main>
+</body>
+
+</html>
